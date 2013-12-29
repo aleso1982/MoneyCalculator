@@ -13,14 +13,6 @@ import moneycalculator.ui.MoneyViewer;
 public class Main {
 
     public static void main(String[] args) {
-        /*System.out.println("*****   PRUEBA INICIAL *****");
-        CurrencySetLoader.getInstance().load();
-        CurrencySet.getInstance().showCurrencies();
-        Currency a = new Currency("USD", "Dollar Americano", "$");
-        Currency b = new Currency("EUR", "Euro", "€");
-        ExchangeRate exchangeRate = new ExchangeRate(a, b, new Number(2.3), new Date());
-        System.out.println(exchangeRate);
-        System.out.println("*****   FIN PRUEBA INICIAL  *****\n");*/
 
         System.out.println("*****   MONEY CALCULATOR  *****");
         System.out.println("Como prueba solo está disponible el cambio entre euros y dollar americano");
