@@ -4,10 +4,10 @@ import java.util.Date;
 
 public class ExchangeRate {
     
-   private Currency fromCurrency;
-   private Currency toCurrency;
-   private Number rate;
-   private Date date;
+   private final Currency fromCurrency;
+   private final Currency toCurrency;
+   private final Number rate;
+   private final Date date;
 
     public ExchangeRate(Currency fromCurrency, Currency toCurrency, Number rate, Date date) {
         this.fromCurrency = fromCurrency;

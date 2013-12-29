@@ -1,9 +1,5 @@
 package moneycalculator;
 
-import java.util.Date;
-import moneycalculator.model.Currency;
-import moneycalculator.model.CurrencySet;
-import moneycalculator.model.ExchangeRate;
 import moneycalculator.persistance.CurrencySetLoader;
 import moneycalculator.persistance.ExchangeRateLoader;
 import moneycalculator.persistance.MockExchangeRateLoader;
@@ -13,7 +9,6 @@ import moneycalculator.ui.ConsoleMoneyViewer;
 import moneycalculator.ui.CurrencyDialog;
 import moneycalculator.ui.MoneyDialog;
 import moneycalculator.ui.MoneyViewer;
-import moneycalculator.model.Number;
 
 public class Main {
 
@@ -27,7 +22,8 @@ public class Main {
         System.out.println(exchangeRate);
         System.out.println("*****   FIN PRUEBA INICIAL  *****\n");*/
 
-        System.out.println("*****   SEGUNDA PRUEBA  *****");
+        System.out.println("*****   MONEY CALCULATOR  *****");
+        System.out.println("Como prueba solo está disponible el cambio entre euros y dollar americano");
         CurrencySetLoader.getInstance().load();
         ExchangeMoneyControl control = new ExchangeMoneyControl(
                 createExchangeRateLoader(),
@@ -35,7 +31,6 @@ public class Main {
                 createMoneyDialog(),
                 createMoneyViewer());
         control.execute();
-        System.out.println("*****   FIN SEGUNDA PRUEBA  *****");
 
     }
 
